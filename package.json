@@ -1,0 +1,28 @@
+{
+  "name": "electron-crud-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-builder": "^25.1.7"
+  },
+  "build": {
+    "appId": "br.com.adrenabyte.electron-crud-app",
+    "productName": "ElectronCRUDApp",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
